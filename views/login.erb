@@ -1,0 +1,68 @@
+<style type="text/css">
+    /* Override some defaults */
+  html, body {
+    background-color: #eee;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+    /* The white background content wrapper */
+  .container > .row {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 -20px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+  }
+
+  legend {
+    margin-right: -50px;
+    font-weight: bold;
+    color: #404040;
+  }
+
+  .login-form .btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+
+</style>
+
+<div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="login-form">
+        <div class="alert alert-info"><%= "请输入邮箱和登陆密码,登陆即可注册" %> </div>
+        <form class="center" action="/login" method="post">
+          <fieldset>
+            <div data-rel="tooltip" data-original-title="邮箱" class="clearfix" style="position:relative">
+              <span>
+              	<input id='email' name='email' type='text' placeholder='邮箱'/>
+                <span class="green" style="position:absolute;left: 80%;top:7px;display:none"><i class="icon-ok"></i></span>
+              </span>
+            </div>
+            <div data-rel="tooltip" data-original-title="密码" class="clearfix" style="position:relative">
+              <span>
+              	<input id='password' name='password' type='password' placeholder="密码"/>
+                <span class="green" style="position:absolute;left: 80%;top:7px;display:none"><i class="icon-ok"></i></span>
+              </span>
+            </div>
+            <button id="submit" type="submit" class="btn btn-small primary"><%= "登陆" %></button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+

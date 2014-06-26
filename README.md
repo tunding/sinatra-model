@@ -1,0 +1,12 @@
+<markdown>
+#简易网站模板sinatra
+模板以MVC为架构，开发者可以参考sinatrarb.com官方文档添加规则。
+#model
+	使用datampper框架映射sqlite数据库，数据库默认为development.db，其中存在users表，记录用户信息。
+#views
+	erb文件目录
+#controller
+	路由信息
+#public
+	静态文件默认目录，其中存放image、css、js。
+</markdown>
